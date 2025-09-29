@@ -45,16 +45,26 @@
 }
 
 /* Show menu only when active */
-.nav-menu.active {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background: white;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  padding: 15px;
-  border-radius: 8px;
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #ff9ed4, #ff6ec7, #c471ed);
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-link {
+    color: white;
+  }
 }
 
         .nav-container {
