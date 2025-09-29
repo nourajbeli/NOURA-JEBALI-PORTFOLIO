@@ -1117,9 +1117,9 @@
             // Add click tracking for project button
             const projectBtn = document.querySelector('.project-btn');
             if (projectBtn) {
-                projectBtn.addEventListener('click', <a id="myLink" href="https://www.google.com" target="_blank">Go to Google</a>
-<button id="btn">Open Link with JS</button>
-
+                projectBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        console.log("Clicked project:", btn.href);
   // Select button and link with DOM
   const btn = document.querySelector("#btn");
   const link = document.querySelector("#myLink");
