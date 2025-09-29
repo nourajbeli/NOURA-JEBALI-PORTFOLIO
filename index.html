@@ -1109,9 +1109,19 @@
             // Add click tracking for project button
             const projectBtn = document.querySelector('.project-btn');
             if (projectBtn) {
-                projectBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    alert('Projet en cours de développement! 🚀');
+                projectBtn.addEventListener('click', <a id="myLink" href="https://www.google.com" target="_blank">Go to Google</a>
+<button id="btn">Open Link with JS</button>
+
+<script>
+  // Select button and link with DOM
+  const btn = document.querySelector("#btn");
+  const link = document.querySelector("#myLink");
+
+  // When button clicked → simulate link click
+  btn.addEventListener("click", function() {
+    link.click();
+  });
+</script>
                 });
             }
         });
