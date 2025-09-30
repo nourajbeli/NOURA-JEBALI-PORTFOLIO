@@ -793,7 +793,61 @@
                 align-items: center;
                 gap: 15px;
             }
-        }
+        
+    /* Experience Section */
+.experience {
+    margin-bottom: 30px;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #ff6ec7, #c471ed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.experience-card {
+    background: linear-gradient(135deg, #ffb3d9 0%, #ffc9e6 100%);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(255, 179, 217, 0.3);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 179, 217, 0.4);
+}
+
+.experience-card h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.experience-card .date {
+    font-size: 0.9em;
+    color: #ff6ec7;
+    font-weight: 500;
+}
+
+.experience-card p {
+    color: #444;
+    line-height: 1.6;
+}
+
+                
     </style>
 </head>
 <body>
@@ -864,6 +918,20 @@
                 </div>
             </div>
         </section> 
+        <!-- Professional Experience Section -->
+       <section class="experience" id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                  <h3>AI Training Program <span class="date">(Ongoing, 2025)</span></h3>
+                  <p>Currently participating in an Artificial Intelligence training program, focusing on the basics of AI, programming, and digital tools. Developing foundational skills and gradually progressing toward advanced topics.</p>
+            </div>
+               <div class="experience-card">
+                 <h3>Self-Learning in Web Development</h3>
+                 <p>Learning front-end technologies (HTML, CSS, JavaScript) and applying them through small projects to build a personal portfolio.</p>
+              </div>
+           </div>
+       </section>
 
         <!-- Services Section -->
         <section class="services" id="services">
